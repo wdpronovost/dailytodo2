@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:200,300,400&display=swap");
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+    End of _reset
+*/
+/*
+
+    Stuff I like from BootStrap...
+
+ * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+html, * {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(20deg, #7676c4 50%, white 50%);
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 50px auto;
+  height: 100%;
+}
+
+header {
+  padding: 20px;
+  background-color: #7676c4;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px -5px #6f6f6f;
+          box-shadow: 5px 5px 15px -5px #6f6f6f;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 415px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.items__container {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(20deg, white 56%, #7676c4 56%);
+  border-radius: 10px;
+  margin: 50px auto 0;
+  -webkit-box-shadow: 5px 5px 15px -5px #6f6f6f;
+          box-shadow: 5px 5px 15px -5px #6f6f6f;
+}
+
+.items__container__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.trash-btn {
+  background: rgba(118, 118, 196, 0.7);
+  border: 0;
+  color: white;
+  margin: 0;
+  height: 45px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.trash-btn:hover {
+  background: #ccc;
+  color: red;
+}
+
+.trash-btn svg {
+  height: 100%;
+}
+
+.items__container__list__item:first-child form {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.items__container__list__item:first-child .trash-btn {
+  border-top-right-radius: 10px;
+}
+
+.items__container__list__item:last-child form {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.items__container__list__item:last-child .trash-btn {
+  border-bottom-right-radius: 10px;
+}
+
+.form-list {
+  border: 1px solid #dfdfdf;
+  display: -ms-grid;
+  display: grid;
+  background-color: #ffffff;
+  width: 100%;
+  -ms-grid-columns: max-content auto max-content;
+      grid-template-columns: -webkit-max-content auto -webkit-max-content;
+      grid-template-columns: max-content auto max-content;
+  place-items: center;
+}
+
+.form-list input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.form-list input[type="checkbox"]:checked {
+  -webkit-filter: invert(0%) hue-rotate(20deg) brightness(1);
+          filter: invert(0%) hue-rotate(20deg) brightness(1);
+}
+
+.form-list input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #7676c4;
+          text-decoration-color: #7676c4;
+  font-style: italic;
+  font-size: .9rem;
+  color: #ababab;
+}
+
+.form-list p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0 5px;
+  color: #6f6f6f;
+  width: 100%;
+}
+
+.items__container__add {
+  max-width: 100%;
+  position: relative;
+}
+
+.items__container__add form.form-add {
+  position: relative;
+}
+
+.items__container__add form.form-add > input {
+  width: 100%;
+  height: 45px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #7676c4;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.items__container__add form.form-add > input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+.items__container__add form.form-add > input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.items__container__add form.form-add > input::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.items__container__add form.form-add > input::placeholder {
+  color: #aaaaaa;
+}
+
+form.form-add button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #7676c4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #7676c4;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+form.form-add button svg {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 80%;
+}
+
+footer {
+  margin: 20px auto;
+  text-align: center;
+  color: ghostwhite;
+  font-size: .8rem;
+  line-height: 1;
+  font-weight: 200;
+}
+/*# sourceMappingURL=style.css.map */
